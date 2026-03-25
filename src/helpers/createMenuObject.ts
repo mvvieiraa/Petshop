@@ -1,8 +1,8 @@
 import { fishes } from "../controllers/pageController"
 
-type Menuotions = ''| 'all | 'dogs' | 'cats' | 'fishes'
+type Menuoptions = ''| 'all' | 'dogs' | 'cats' | 'fishes'
 
-export const createMenuObject = (activeMenu: string) => {
+export const createMenuObject = (activeMenu: Menuoptions) => {
     let returnObject = {
         all: false,
         dogs: false,
